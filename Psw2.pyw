@@ -116,7 +116,7 @@ app.title('Password Manager')
 app.geometry("550x150+250+250")
 
 # ID Display
-displayer = tk.Listbox(app, width=50)
+displayer = tk.Listbox(app, width=50, height=9)
 displayer.bind("<<ListboxSelect>>", get_password)
 
 for keys in passwordDic.keys():
@@ -177,6 +177,5 @@ checkMaj.grid(row=2,column=0,sticky='N')
 checkLow.grid(row=2, column=1,sticky='N')
 checkSymb.grid(row=2,column=2,sticky='N')
 checkInt.grid(row=2,column=3,sticky='N')
-
 
 app.mainloop()
